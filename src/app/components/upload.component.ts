@@ -1,9 +1,12 @@
 
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-upload',
+  standalone: true,
+  imports: [CommonModule],
   template: `
     <h2>📤 Upload PDF</h2>
     <input type="file" (change)="upload($event)" />
