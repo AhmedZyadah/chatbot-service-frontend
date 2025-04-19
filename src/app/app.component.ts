@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
+  template: `
+    <div style="padding: 2rem">
+      <h1>📄 Chatbot Document Service</h1>
+      <app-upload></app-upload>
+      <hr />
+      <app-chat></app-chat>
+    </div>
+  `,
   styleUrl: './app.component.css'
 })
 export class AppComponent {
